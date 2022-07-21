@@ -1,0 +1,249 @@
+{% extends 'polls/base.html' %}
+{% load static %}
+
+    {% block css %}
+        <link href="{% static 'polls/css/cslider.css' %}" rel="stylesheet" />
+    {% endblock %}
+
+  {% block content %}
+
+    <!-- section featured -->
+    <section id="featured">
+
+      <!-- start slider -->
+      <div id="da-slider" class="da-slider">
+        <div class="da-slide">
+          <h2>Easy management</h2>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+          <a href="#" class="btn btn-theme btn-large da-link">Read more</a>
+          <div class="da-img"><img src="{% static 'polls/img/slides/parallax/1.png' %}" alt="" /></div>
+        </div>
+        <div class="da-slide">
+          <h2>Embed your video</h2>
+          <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+          <a href="#" class="btn btn-primary btn-large da-link">Read more</a>
+          <div class="da-img">
+            <div class="video-container">
+              <iframe src="http://player.vimeo.com/video/30585464?title=0&amp;byline=0">			</iframe>
+            </div>
+          </div>
+
+        </div>
+        <div class="da-slide">
+          <h2>Great for any websites</h2>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+          <a href="#" class="btn btn-success btn-large da-link">Read more</a>
+          <div class="da-img"><img src="{% static 'polls/img/slides/parallax/2.png' %}" alt="" /></div>
+        </div>
+        <nav class="da-arrows">
+          <span class="da-arrows-prev"></span>
+          <span class="da-arrows-next"></span>
+        </nav>
+      </div>
+      <!-- end slider -->
+
+    </section>
+    <!-- /section featured -->
+
+    <section id="content">
+      <div class="container">
+
+        <div class="row">
+          <div class="span12">
+            <div class="cta-box">
+              <div class="row">
+                <div class="span8">
+                  <div class="cta-text">
+                    <h2>Special price in very <span>limited</span> times</h2>
+                  </div>
+                </div>
+                <div class="span4">
+                  <div class="cta-btn">
+                    <a href="#" class="btn btn-theme">Get a quote <i class="{% static 'polls/icon-angle-right' %}"></i></a>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span4">
+                <div class="box flyLeft">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgdark icon-star icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4>High <strong>Quality</strong></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="box flyIn">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bglight icon-dropbox icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Rich of <strong>Features</strong></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="box flyRight">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgdark icon-laptop active icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Modern <strong>Design</strong></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="span4">
+                <div class="box flyLeft">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgprimary icon-code icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Valid <strong>Code</strong></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="box flyIn">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgdanger icon-cut icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Special <strong>Price</strong></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="box flyRight">
+                  <div class="icon">
+                    <i class="ico icon-circled icon-bgsuccess icon-user icon-3x"></i>
+                  </div>
+                  <div class="text">
+                    <h4>Free <strong>Support</strong></h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                    </p>
+                    <a href="#">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="span12">
+            <div class="solidline"></div>
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="span12 aligncenter">
+            <h3 class="title">What people <strong>saying</strong> about us</h3>
+            <div class="blankline30"></div>
+
+            <ul class="bxslider">
+              <li>
+                <blockquote>
+                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
+                  feugiat
+                </blockquote>
+                <div class="testimonial-autor">
+                  <img src="{% static 'polls/img/dummies/testimonial/1.png' %}" alt="" />
+                  <h4>Hillary Doe</h4>
+                  <a href="#">www.companyname.com</a>
+                </div>
+              </li>
+              <li>
+                <blockquote>
+                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
+                  feugiat
+                </blockquote>
+                <div class="testimonial-autor">
+                  <img src="{% static 'polls/img/dummies/testimonial/2.png' %}" alt="" />
+                  <h4>Michael Doe</h4>
+                  <a href="#">www.companyname.com</a>
+                </div>
+              </li>
+              <li>
+                <blockquote>
+                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
+                  feugiat
+                </blockquote>
+                <div class="testimonial-autor">
+                  <img src="{% static 'polls/img/dummies/testimonial/3.png' %}" alt="" />
+                  <h4>Mark Donovan</h4>
+                  <a href="#">www.companyname.com</a>
+                </div>
+              </li>
+              <li>
+                <blockquote>
+                  Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis feugiat.Suspendisse eu erat quam. Vivamus porttitor eros quis nisi lacinia sed interdum lorem vulputate. Aliquam a orci quis nisi sagittis sagittis. Etiam adipiscing, justo quis
+                  feugiat
+                </blockquote>
+                <div class="testimonial-autor">
+                  <img src="{% static 'polls/img/dummies/testimonial/4.png' %}" alt="" />
+                  <h4>Marry Doe Elliot</h4>
+                  <a href="#">www.companyname.com</a>
+                </div>
+              </li>
+            </ul>
+            <div class="blankline30"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  {% endblock %}
+
+    {% block js %}
+
+<script src="{% static 'polls/js/modernizr.custom.js' %}"></script>
+  <script src="{% static 'polls/js/jquery.cslider.js' %}"></script>
+
+        <script>
+    $(function() {
+      $('#da-slider').cslider();
+    });
+  </script>
+
+    {% endblock %}

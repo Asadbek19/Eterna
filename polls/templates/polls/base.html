@@ -1,0 +1,271 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your page description here" />
+  <meta name="author" content="" />
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link href="{% static 'polls/css/bootstrap.css' %}" rel="stylesheet" />
+  <link href="{% static 'polls/css/bootstrap-responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'polls/css/flexslider.css' %}" rel="stylesheet" />
+  <link href="{% static 'polls/css/prettyPhoto.css' %}" rel="stylesheet" />
+  <link href="{% static 'polls/css/camera.css' %}" rel="stylesheet" />
+  <link href="{% static 'polls/css/jquery.bxslider.css' %}" rel="stylesheet" />
+  <link href="{% static 'polls/css/style.css' %}" rel="stylesheet" />
+    {% block css %}
+
+    {% endblock %}
+
+  <!-- Theme skin -->
+  <link href="{% static 'polls/color/default.css' %}" rel="stylesheet" />
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'polls/ico/apple-touch-icon-144-precomposed.png' %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'polls/ico/apple-touch-icon-114-precomposed.png' %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'polls/ico/apple-touch-icon-72-precomposed.png' %}" />
+  <link rel="apple-touch-icon-precomposed" href="{% static 'polls/ico/apple-touch-icon-57-precomposed.png' %}" />
+  <link rel="shortcut icon" href="{% static 'polls/ico/favicon.png' %}" />
+
+  <!-- =======================================================
+    Theme Name: Eterna
+    Theme URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <div id="wrapper">
+
+    <!-- start header -->
+    <header>
+      <div class="top">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <p class="topcontact"><i class="icon-phone"></i> +1 333 444 5522</p>
+            </div>
+            <div class="span6">
+
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-white"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/asadbek-akramov-profile" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest  icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Google +"><i class="icon-google-plus icon-white"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Dribbble"><i class="icon-dribbble icon-white"></i></a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+
+
+        <div class="row nomargin">
+          <div class="span4">
+            <div class="logo">
+              <a href="{% url 'index' %}"><img src="{% static 'polls/img/logo.png' %}" alt="" /></a>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <ul class="nav topnav">
+                    <li class="dropdown {{ active_home }}">
+                      <a href="{% url 'index' %}"><i class="icon-home"></i> Home <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li class="{{ active_homepage2 }}"><a href="{% url 'index2' %}">Homepage 2</a></li>
+                          <li class="{{ active_homepage3 }}"><a href="{% url 'index3' %}">Homepage 3</a></li>
+                          <li class="{{ active_homepage4 }}"><a href="{% url 'index4' %}">Parallax slider</a></li>
+                          <li class="{{ active_homepage_landingpage }}"><a href="{% url 'index_landingpage' %}">Landing page</a></li>
+                      </ul>
+                      </li>
+                      <li class="dropdown {{ active_features }}">
+                      <a href="{% url 'typography' %}">Features <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li class="{{ active_typography }}"><a href="{% url 'typography' %}">Typography</a></li>
+                          <li class="{{ active_components }}"><a href="{% url 'components' %}">Components</a></li>
+                          <li class="{{ active_icons }}"><a href="{% url 'icons' %}">Icons</a></li>
+                          <li class="{{ active_icon_var }}"><a href="{% url 'icon_variations' %}">Icon variations</a></li>
+                          <li class="dropdown"><a href="#">3rd menus<i class="icon-angle-right"></i></a>
+                          <ul class="dropdown-menu sub-menu-level1">
+                              <li><a href="{% url 'index' %}">Sub menu</a></li>
+                              <li><a href="{% url 'index' %}">Sub menu</a></li>
+                          </ul>
+                          </li>
+                      </ul>
+                      </li>
+                      <li class="dropdown {{ active_pages }}">
+                      <a href="{% url 'faq' %}">Pages <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li class="{{ active_about }}"><a href="{% url 'about' %}">About us</a></li>
+                          <li class="{{ active_faq }}"><a href="{% url 'faq' %}">FAQ</a></li>
+                          <li class="{{ active_team }}"><a href="{% url 'team' %}">Team</a></li>
+                          <li class="{{ active_services }}"><a href="{% url 'services' %}">Services</a></li>
+                          <li class="{{ active_pricingbox }}"><a href="{% url 'pricingbox' %}">Pricing boxes</a></li>
+                          <li class="{{ active_404 }}"><a href="{% url '404' %}">404</a></li>
+                      </ul>
+                      </li>
+                      <li class="dropdown {{ active_portfolio }}">
+                      <a href="{% url 'portfolio_detail' %}">Portfolio <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li  class="{{ active_portfolio2 }}"><a href="{% url 'portfolio2' %}">Portfolio 2 columns</a></li>
+                          <li class="{{ active_portfolio3 }}"><a href="{% url 'portfolio3' %}">Portfolio 3 columns</a></li>
+                          <li class="{{ active_portfolio4 }}"><a href="{% url 'portfolio4' %}">Portfolio 4 columns</a></li>
+                          <li class="{{ active_detail }}"><a href="{% url 'portfolio_detail' %}">Portfolio detail</a></li>
+                      </ul>
+                      </li>
+                      <li class="dropdown {{ active_blog }}">
+                      <a href="{% url 'blog_fullwidth' %}">Blog <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li class="{{ active_blog_left }}"><a href="{%  url 'blog_left_sidebar' %}">Blog left sidebar</a></li>
+                          <li class="{{ active_blog_right }}"><a href="{% url 'blog_right_sidebar' %}">Blog right sidebar</a></li>
+                          <li class="{{ active_fullwidth }}"><a href="{% url 'blog_fullwidth' %}">Blog fullwidth</a></li>
+                          <li class="{{ active_post_left }}"><a href="{% url 'post_left_sidebar' %}">Post left sidebar</a></li>
+                          <li class="{{ active_post_right }}"><a href="{% url 'post_right_sidebar' %}">Post right sidebar</a></li>
+                      </ul>
+                      </li>
+                      <li class="{{ active_contact }}">
+                      <a href="{% url 'contact' %}">Contact </a>
+                      </li>
+{#                      <li class="{{ register }}"><a href="{% url 'register' %}">Registration</a></li>#}
+{#                      <li class="{{ login }}"><a href="{% url 'login' %}">Login</a></li>#}
+                  </ul>
+                </nav>
+              </div>
+                <!-- end navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      <!-- end header -->
+
+      {% block content %}
+
+
+      {% endblock %}
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Browse pages</h5>
+              <ul class="link-list">
+                <li><a href="#">Our company</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Press release</a></li>
+                <li><a href="#">What we have done</a></li>
+                <li><a href="#">Our support forum</a></li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Get in touch</h5>
+              <address>
+							<strong>Eterna company Inc.</strong><br>
+							Somestreet 200 VW, Suite Village A.001<br>
+							Jakarta 13426 Indonesia
+						</address>
+              <p>
+
+                <i class="icon-phone"></i> +971 58 304-92-52 - +998 33 700 80 37 <br>
+                <i class="icon-envelope-alt"></i> akramovasadbek777@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="span4">
+            <div class="widget">
+              <h5 class="widgetheading">Subscribe newsletter</h5>
+              <p>
+                Keep updated for new releases and freebies. Enter your e-mail and subscribe to our newsletter.
+              </p>
+              <form class="subscribe">
+                <div class="input-append">
+                  <input class="span2" id="appendedInputButton" type="text">
+                  <button class="btn btn-theme" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p><span>&copy; Eterna company. All right reserved</span></p>
+              </div>
+
+            </div>
+
+            <div class="span6">
+              <div class="credits">
+                <!--
+                  All the links in the footer should remain intact.
+                  You can delete the links only if you purchased the pro version.
+                  Licensing information: https://bootstrapmade.com/license/
+                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Eterna
+                -->
+
+                Designed by <a href="https://github.com/Asadbek19">Akramov Asadbek</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-angle-up icon-square icon-bglight icon-2x active"></i></a>
+
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="{% static 'polls/js/jquery.js' %}"></script>
+  <script src="{% static 'polls/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'polls/js/bootstrap.js' %}"></script>
+
+  <script src="{% static 'polls/js/modernizr.custom.js' %}"></script>
+  <script src="{% static 'polls/js/toucheffects.js' %}"></script>
+  <script src="{% static 'polls/js/google-code-prettify/prettify.js' %}"></script>
+  <script src="{% static 'polls/js/jquery.bxslider.min.js' %}"></script>
+  <script src="{% static 'polls/js/camera/camera.js' %}"></script>
+  <script src="{% static 'polls/js/camera/setting.js' %}"></script>
+
+  {% block js %}
+
+  {% endblock %}
+
+  <script src="{% static 'polls/js/jquery.prettyPhoto.js' %}"></script>
+  <script src="{% static 'polls/js/portfolio/jquery.quicksand.js' %}"></script>
+  <script src="{% static 'polls/js/portfolio/setting.js' %}"></script>
+
+  <script src="{% static 'polls/js/jquery.flexslider.js' %}"></script>
+  <script src="{% static 'polls/js/animate.js' %}"></script>
+  <script src="{% static 'polls/js/inview.js' %}"></script>
+
+{#  {% block js_of_contact %}#}
+{##}
+{#  {% endblock %}#}
+
+  <!-- Template Custom JavaScript File -->
+  <script src="{% static 'polls/js/custom.js' %}"></script>
+
+</body>
+</html>

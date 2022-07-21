@@ -1,0 +1,111 @@
+{% extends 'polls/base.html'%}
+{% load static %}
+
+{% block content %}
+
+    <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="inner-heading">
+              <ul class="breadcrumb">
+                <li><a href="{% url 'index' %}">Home</a> <i class="icon-angle-right"></i></li>
+                <li><a href="#">Features</a> <i class="icon-angle-right"></i></li>
+                <li class="active">Icon variations</li>
+              </ul>
+              <h2>Icon variations</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+
+
+
+            <h4 class="title">Icon sizes for (circled, square, rounded - dark and light background)</h4>
+
+            <div class="row">
+              <div class="span4">
+                <p><i class="icon-circled icon-bgdark icon-beaker"></i> <i class="icon-circled icon-bglight icon-beaker"></i> Default size</p>
+                <p><i class="icon-circled icon-bgdark icon-2x icon-file"></i> <i class="icon-circled icon-bglight icon-2x icon-file"></i> Icon 2x</p>
+                <p><i class="icon-circled icon-bgdark icon-apple icon-3x"></i> <i class="icon-circled icon-bglight icon-3x icon-apple"></i> Icon 3x</p>
+                <p><i class="icon-circled icon-bgdark icon-suitcase icon-4x"></i> <i class="icon-circled icon-bglight icon-4x icon-suitcase"></i> Icon 4x</p>
+                <p><i class="icon-circled icon-bgdark icon-rocket icon-5x"></i> <i class="icon-circled icon-bglight icon-5x icon-rocket"></i> Icon 5x</p>
+              </div>
+              <div class="span4">
+                <p><i class="icon-square icon-bgdark icon-beaker"></i> <i class="icon-square icon-bglight icon-beaker"></i> Default size</p>
+                <p><i class="icon-square icon-bgdark icon-file icon-2x"></i> <i class="icon-square icon-bglight icon-file icon-2x"></i>Icon 2x</p>
+                <p><i class="icon-square icon-bgdark icon-apple icon-3x"></i> <i class="icon-square icon-bglight icon-apple icon-3x"></i> Icon 3x</p>
+                <p><i class="icon-square icon-bgdark icon-suitcase icon-4x"></i> <i class="icon-square icon-bglight icon-suitcase icon-4x"></i> Icon 4x</p>
+                <p><i class="icon-square icon-bgdark icon-rocket icon-5x"></i> <i class="icon-square icon-bglight icon-rocket icon-5x"></i> Icon 5x</p>
+              </div>
+              <div class="span4">
+                <p><i class="icon-rounded icon-bgdark icon-beaker"></i> <i class="icon-rounded icon-bglight icon-beaker"></i> Default size</p>
+                <p><i class="icon-rounded icon-bgdark icon-file icon-2x"></i> <i class="icon-rounded icon-bglight icon-file icon-2x"></i> Icon 2x</p>
+                <p><i class="icon-rounded icon-bgdark icon-apple icon-3x"></i> <i class="icon-rounded icon-bglight icon-apple icon-3x"></i> Icon 3x</p>
+                <p><i class="icon-rounded icon-bgdark icon-suitcase icon-4x"></i> <i class="icon-rounded icon-bglight icon-suitcase icon-4x"></i> Icon 4x</p>
+                <p><i class="icon-rounded icon-bgdark icon-rocket icon-5x"></i> <i class="icon-rounded icon-bglight icon-rocket icon-5x"></i> Icon 5x</p>
+              </div>
+
+              <!-- divider -->
+              <div class="span12 margintop30">
+                <div class="solidline"></div>
+                <div class="blankline30"></div>
+              </div>
+              <!-- end divider -->
+
+
+              <div class="span12 demoinline">
+                <h4 class="title">Basic icon sizes : 5 sizes</h4>
+                <p><i class="icon-beaker"></i> default</p>
+                <p><i class="icon-beaker icon-2x"></i> icon 2x, add class <code>icon-2x</code></p>
+                <p><i class="icon-beaker icon-3x"></i> icon 3x, add class <code>icon-3x</code></p>
+                <p><i class="icon-beaker icon-4x"></i> icon 4x, add class <code>icon-4x</code></p>
+                <p><i class="icon-beaker icon-5x"></i> icon 5x, add class <code>icon-5x</code></p>
+              </div>
+
+              <!-- divider -->
+              <div class="span12 margintop30">
+                <div class="solidline"></div>
+                <div class="blankline30"></div>
+              </div>
+              <!-- end divider -->
+
+              <div class="span12 demoinline">
+                <h4 class="title">Icon with color background</h4>
+                <p><i class="icon-circled icon-bgprimary icon-beaker icon-2x"></i> icon-bgprimary</p>
+                <p><i class="icon-circled icon-bgwarning icon-beaker icon-2x"></i> icon-bgwarning</p>
+                <p><i class="icon-circled icon-bgdanger icon-beaker icon-2x"></i> icon-bgdanger</p>
+                <p><i class="icon-circled icon-bgsuccess icon-beaker icon-2x"></i> icon-bgsuccess</p>
+                <p><i class="icon-circled icon-bginfo icon-beaker icon-2x"></i> icon-bginfo</p>
+
+                <div class="blankline20"></div>
+                <p><i class="icon-rounded icon-bgprimary icon-code icon-2x"></i> icon-bgprimary</p>
+                <p><i class="icon-rounded icon-bgwarning icon-star icon-2x"></i> icon-bgwarning</p>
+                <p><i class="icon-rounded icon-bgdanger icon-heart icon-2x"></i> icon-bgdanger</p>
+                <p><i class="icon-rounded icon-bgsuccess icon-beaker icon-2x"></i> icon-bgsuccess</p>
+                <p><i class="icon-rounded icon-bginfo icon-briefcase icon-2x"></i> icon-bginfo</p>
+
+                <div class="blankline20"></div>
+                <p><i class="icon-square icon-bgprimary icon-code icon-2x"></i> icon-bgprimary</p>
+                <p><i class="icon-square icon-bgwarning icon-star icon-2x"></i> icon-bgwarning</p>
+                <p><i class="icon-square icon-bgdanger icon-heart icon-2x"></i> icon-bgdanger</p>
+                <p><i class="icon-square icon-bgsuccess icon-beaker icon-2x"></i> icon-bgsuccess</p>
+                <p><i class="icon-square icon-bginfo icon-briefcase icon-2x"></i> icon-bginfo</p>
+              </div>
+
+            </div>
+
+
+          </div>
+          <!-- end span12 -->
+        </div>
+      </div>
+    </section>
+
+{% endblock %}
